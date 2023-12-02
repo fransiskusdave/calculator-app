@@ -5,10 +5,6 @@ const equal = document.querySelector(".button-equal");
 const del = document.querySelector(".del");
 const ac = document.querySelector(".ac");
 
-// window.addEventListener("load", () => {
-//   input.value = "";
-// });
-
 buttons.forEach((button) => {
   button.addEventListener("click", () => {
     if (equal_click == 1) {
