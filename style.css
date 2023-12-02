@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+:root {
+  --primary-color: #ebe3d5;
+  --secondary-color: #b0a695;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    var(--primary-color) 50%,
+    var(--secondary-color) 50%
+  );
+}
+
+.calculator {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #b0a695;
+  width: 70vmin;
+  padding: 4vmin 5vmin;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.display {
+  width: 100%;
+}
+
+.display .input {
+  width: 100%;
+  text-align: right;
+  border: none;
+  background-color: transparent;
+  padding: 1vmin 2vmin;
+  color: #333;
+  font-size: 5vmin;
+}
+
+.display .input::placeholder {
+  color: #333;
+  font-size: 5vmin;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2vmin;
+  margin-top: 2em;
+}
+
+.buttons button {
+  font-size: 4vmin;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #333;
+  border-radius: 8px;
+  padding: 3vmin;
+}
+
+.buttons .button-equal {
+  grid-row: span 2;
+  background-color: var(--primary-color);
+}
+
+.buttons #nol {
+  grid-column: span 2;
+}
